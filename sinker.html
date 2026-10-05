@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SINKER ARTS — Tattoo • Piercing • Supplies</title>
+    <title>SINKER ARTS | Tattoos, Piercing &amp; Supplies in Nakuru, Kenya</title>
     <meta
       name="description"
-      content="SINKER ARTS — custom tattooing, piercing and professional studio supplies in Nakuru, Kenya."
+      content="SINKER ARTS in Nakuru, Kenya offers custom tattoos, professional piercing and tattoo supplies. Explore designs, book an appointment or shop studio essentials."
     />
+    <link rel="canonical" href="https://sinkerarts.pages.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SINKER ARTS | Tattoos, Piercing &amp; Supplies in Nakuru, Kenya" />
+    <meta property="og:description" content="Custom tattoos, professional piercing and tattoo supplies in Nakuru, Kenya." />
+    <meta property="og:url" content="https://sinkerarts.pages.dev/" />
     <style>
       :root {
         --bg: #0f0f0f;
@@ -20,8 +25,8 @@
         --text: #f3efe9;
         --muted: #c0b5a9;
         --muted-2: #8d867f;
-        --gold: #d9a55b;
-        --gold-soft: #f2d09b;
+        --gold: #b00000;
+        --gold-soft: #ff3030;
         --red: #c85242;
         --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
       }
@@ -52,6 +57,10 @@
 
       button, input, select, textarea {
         font: inherit;
+      }
+
+      button {
+        transition: transform 0.16s ease, filter 0.16s ease;
       }
 
       .container {
@@ -209,6 +218,17 @@
       .design-btn:hover,
       .cart-action:hover {
         transform: translateY(-1px);
+      }
+
+      button:active:not(:disabled) {
+        transform: scale(0.96);
+        filter: brightness(1.15);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        button {
+          transition: none !important;
+        }
       }
 
       section {
